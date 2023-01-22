@@ -11,7 +11,6 @@ public class AxolotlSaverPlugin extends JavaPlugin {
     public void onEnable() {
         Instance = this;
 
-//        System.out.println("Enabling this plugin works.");
         var config = this.getConfig();
         config.addDefault("version", "0.1");
         saveDefaultConfig();
@@ -22,6 +21,5 @@ public class AxolotlSaverPlugin extends JavaPlugin {
 
     @Override
     public void onDisable() {
-//        System.out.println("Disabling this plugin works.");
     }
 }
