@@ -1,2 +1,2 @@
-# AxolotlSaver
-A minecraft spigot plugin to prevent the deaths of named axolotls
+# Suffocation Saver
+A Minecraft plugin to prevent the deaths of named animals by suffocation. 

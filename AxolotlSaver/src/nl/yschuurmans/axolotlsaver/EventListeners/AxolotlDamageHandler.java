@@ -14,15 +14,10 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 
-/**
- *
- * @author youri
- */
 public class AxolotlDamageHandler implements Listener {
 
     @EventHandler
     final void onEntityDamageEvent(EntityDamageEvent event) {
-//        System.out.println("EVENT!");
         var entity = event.getEntity();
         if (!entity.getType().equals(EntityType.AXOLOTL)) {
             return;
@@ -32,17 +27,12 @@ public class AxolotlDamageHandler implements Listener {
             if (event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_ATTACK)
                     || event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_EXPLOSION)
                     || event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_SWEEP_ATTACK)) {
-//                System.out.println("ATTACK EVENT!");
+                System.out.println("ATTACK EVENT!");
                 return;
             }
-
-//            System.out.println("AXOLOTL EVENT!");
             if (entity.getCustomName() == null) {
                 return;
             }
-            
-//            System.out.println("AXOLOTL NAME:" + entity.getCustomName());
-//            System.out.println("NON-ATTACK EVENT!");
             event.setCancelled(true);
         }
     }

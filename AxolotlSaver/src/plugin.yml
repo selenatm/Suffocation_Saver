@@ -1,4 +1,4 @@
-name: AxolotlSaverPlugin
+name: SuffocationSaver
 version: 1.0
 main: nl.yschuurmans.axolotlsaver.AxolotlSaverPlugin
-api-version: 1.17
+api-version: 1.19
