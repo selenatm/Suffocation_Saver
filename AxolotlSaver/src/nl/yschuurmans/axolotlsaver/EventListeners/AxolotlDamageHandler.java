@@ -27,7 +27,6 @@ public class AxolotlDamageHandler implements Listener {
             if (event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_ATTACK)
                     || event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_EXPLOSION)
                     || event.getCause().equals(EntityDamageEvent.DamageCause.ENTITY_SWEEP_ATTACK)) {
-                System.out.println("ATTACK EVENT!");
                 return;
             }
             if (entity.getCustomName() == null) {
